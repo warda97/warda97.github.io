@@ -103,49 +103,53 @@
     </nav>
 
 
-    <!-- <div id="page">
+    <div id="page">
       <div class="container-fluid">
 	<div class="row">
-	  <div class="col-sm"> -->
+	  <div class="col-sm">
 
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My CV</title>
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                margin: 0;
-                padding: 0;
-                background-color: #f9f9f9;
-            }
-            .container {
-                max-width: 100%;
-                padding: 20px;
-                text-align: center;
-            }
+<a href="content/Warda_CV.pdf">Download my CV here</a>
+
+<!-- <div>
+  <center><embed src="content/Warda_CV.pdf" width="800px" height="2100px" /></center>
+</div>
+ -->
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>My CV</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 100%;
+            padding: 20px;
+            text-align: center;
+        }
+        iframe {
+            width: 100%;
+            height: 100vh; /* Adjust height as needed */
+            border: none;
+        }
+        @media screen and (max-width: 768px) {
             iframe {
-                width: 100%;
-                height: 100vh;
-                border: none;
+                height: 90vh; /* Adjust height for mobile */
             }
-            /* Ensure the iframe does not cause horizontal scrolling */
-            html, body {
-                overflow-x: hidden;
-            }
-            @media screen and (max-width: 768px) {
-                iframe {
-                    height: 90vh; /* Adjust for mobile screens */
-                }
-            }
-        </style>
-    </head>
-    <body>
-        <div class="container">
-          
-            <iframe src="content/Warda_CV.pdf" scrolling="no"></iframe>
-        </div>
-    </body>
-    </html>
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>My Curriculum Vitae</h1>
+        <iframe src="content/Warda_CV.pdf"></iframe>
+    </div>
+</body>
+</html>
+
 
 
 
