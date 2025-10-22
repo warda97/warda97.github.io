@@ -1092,6 +1092,8 @@ button {
     
     .about-image {
         order: 1;
+        max-width: 280px;
+        margin: 0 auto;
     }
     
     .about-image img {
@@ -1708,10 +1710,11 @@ button {
 
 @media (max-width: 768px) {
     .pdf-modal-content {
-        width: 100%;
+        width: 100vw;
         height: 100vh;
         max-width: 100vw;
         border-radius: 0;
+        margin: 0;
     }
     
     .pdf-modal-header {
@@ -1722,6 +1725,16 @@ button {
     
     .pdf-modal-actions {
         justify-content: space-between;
+    }
+    
+    .pdf-viewer-container {
+        width: 100%;
+        overflow: auto;
+    }
+    
+    .pdf-viewer {
+        width: 100%;
+        min-height: 100%;
     }
 }
 
