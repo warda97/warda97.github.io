@@ -514,6 +514,12 @@ const pdfTitle = document.getElementById('pdfTitle');
 const pdfDownloadBtn = document.getElementById('pdfDownloadBtn');
 
 function openPDFViewer(pdfPath, title) {
+    // Validate PDF path exists
+    if (!pdfPath) {
+        console.error('PDF path is required');
+        return;
+    }
+    
     pdfTitle.textContent = title;
     pdfViewer.src = pdfPath;
     pdfDownloadBtn.href = pdfPath;
@@ -531,7 +537,9 @@ function openPDFViewer(pdfPath, title) {
     }, 0);
     
     // Track PDF view
-    trackEvent('Publication', 'View', title);
+    trackEvent('PDF', 'View', title);
+    
+    console.log('PDF Modal opened:', pdfPath);
 }
 
 function closePDFViewer() {
