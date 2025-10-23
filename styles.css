@@ -1439,10 +1439,13 @@ button {
 }
 
 .footer-grid {
-    display: grid;
-    grid-template-columns: 2fr repeat(3, 1fr);
-    gap: var(--spacing-2xl);
+    display: flex;
+    justify-content: center;
     margin-bottom: var(--spacing-2xl);
+}
+
+.footer-brand {
+    text-align: center;
 }
 
 .footer-brand h3 {
@@ -1461,6 +1464,7 @@ button {
 .footer-social {
     display: flex;
     gap: var(--spacing-md);
+    justify-content: center;
 }
 
 .footer-social a {
