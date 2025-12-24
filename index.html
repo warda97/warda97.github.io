@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="UX Researcher Portfolio - Showcasing user research expertise, case studies, and design thinking approach">
-    <meta name="author" content="Warda Usman">
-    <meta property="og:title" content="Warda Usman - UX Researcher Portfolio">
-    <meta property="og:description" content="UX Researcher focused on enterprise systems and usable security">
+    <meta name="author" content="Dr. Warda Usman">
+    <meta property="og:title" content="Dr. Warda Usman">
+    <meta property="og:description" content="Usable security and privacy researcher">
     <meta property="og:image" content="./images/WardaUsman.jpg">
     <meta property="og:type" content="website">
-    <title>Warda Usman</title>
+    <title>Dr. Warda Usman</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;500;600;700&family=Source+Serif+Pro:wght@600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation Header -->
@@ -31,8 +31,8 @@
             </button>
             <ul class="nav-menu" id="navMenu">
                 <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#portfolio" class="nav-link">Projects</a></li>
                 <li><a href="#publications" class="nav-link">Publications</a></li>
+                <li><a href="javascript:void(0);" class="nav-link" onclick="openPDFViewer('./CV_Warda_Usman.pdf', 'Resume - Warda Usman');">CV</a></li>
                 <li>
                     <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Night Mode">
                         <span class="theme-icon">🌙</span>
@@ -53,23 +53,27 @@
                     <div class="about-quick-links">
                         <!-- PhD Application Guide -->
                         <div class="quick-link-card" onclick="openStoryModal('phd-journey')">
-                            <div class="quick-link-icon"></div>
                             <div class="quick-link-content">
-                                <h4>My Journey from Pakistan</h4>
-                                <p>PhD Application Guide & Story</p>
+                                <h4>Read about my journey</h4>
                             </div>
                             <span class="quick-link-arrow">→</span>
                         </div>
 
                         <!-- DEI & Mentorship -->
                         <div class="quick-link-card" onclick="openStoryModal('dei-work')">
-                            <div class="quick-link-icon"></div>
                             <div class="quick-link-content">
                                 <h4>DEI & Mentorship</h4>
-                                <p>Building Inclusive Communities</p>
                             </div>
                             <span class="quick-link-arrow">→</span>
                         </div>
+
+                        <!-- Schedule a Meeting -->
+                        <a href="https://calendar.app.google/eVZNKpZgfH8sMmrD7" target="_blank" class="quick-link-card" style="text-decoration: none; color: inherit;">
+                            <div class="quick-link-content">
+                                <h4>Schedule a Meeting</h4>
+                            </div>
+                            <span class="quick-link-arrow">→</span>
+                        </a>
                     </div>
                 </div>
                 <div class="about-content">
@@ -79,16 +83,19 @@
                     </div>
                     <div class="about-text">
                         <p>
-                            I'm a mixed-methods researcher in Human-Computer Interaction (HCI) and Online Trust & Safety. Currently, I work as a senior researcher on <a href="https://www.corporate.walmart.com/" target="_blank">Walmart Inc.</a>'s  Security Operations team, where I work at the intersection of cybersecurity, user behavior, and organizational resilience. Before this, I earned my Ph.D. in Computer Science from <a href="https://www.byu.edu/" target="_blank">Brigham Young University</a> under the supervision of <a href="https://zappala.byu.edu/" target="_blank">Dr. Daniel Zappala</a>. Our work was published at top-tier venues like IEEE S&P and USENIX SOUPS.
-                        <!-- Currently, I work as a senior researcher on a href="https://www.corporate.walmart.com/" target="_blank">Walmart Inc.</a>'s  Security Operations team, where I lead UX research initiatives focused on cybersecurity, user behavior, and organizational resilience. -->
+                            I am a <b>human-centered security and privacy researcher </b> focused on advancing how threats to people are understood, studied, and modeled in real sociotechnical environments. I currently work as a Senior Researcher on <a href="https://www.corporate.walmart.com/" target="_blank">Walmart Inc.</a>'s Security Operations team, at the intersection of cybersecurity, user behavior, and organizational resilience.
                         </p>
                         <p>
-                            My current work focuses on understanding how people navigate security and privacy decisions in real-world contexts, particularly in enterprise environments. My research combines both qualitative and quantitative methods, and I use a wide range of methods, from in-depth interviews and ethnographic studies to large-scale surveys and behavioral analytics. I translate complex security challenges into actionable insights that balance user needs with organizational security goals.
+                            My research sits at the intersection of Security & Privacy (S&P) and Human–Computer Interaction (HCI). I introduced and formalized human-centered threat modeling, a framework that shifts threat analysis away from system-centric assumptions and toward people's lived realities, constraints, and decision-making processes. My work combines systematization of knowledge, sociotechnical analysis, and deeply community-grounded qualitative methods to build a cumulative and conceptually coherent foundation for studying threats in practice.
                         </p>
                         <p>
-                            Beyond research, I'm passionate about mentorship and building inclusive communities. I've mentored students navigating the PhD application process, particularly those from underrepresented backgrounds, and actively contribute to DEI initiatives in the tech and academic communities.
+                            A core principle of my research is participant sovereignty: people must retain authority over how threats, harms, and risks are defined when research concerns their lives. Through sustained fieldwork and in-depth interviewing with immigrant communities and young adults in the Global South, I show how threat models emerge from social obligations, cultural norms, political conditions, and material constraints that are often invisible in traditional security research.
+                        </p>
+                        <p>
+                            I earned my Ph.D. in Computer Science from <a href="https://www.byu.edu/" target="_blank">Brigham Young University</a>, advised by <a href="https://zappala.byu.edu/" target="_blank">Dr. Daniel Zappala</a> in June 2025.
                         </p>
                     </div>
+                    <!-- Domain Expertise Section (commented out)
                     <div class="expertise-tags">
                         <h3>Domain Expertise</h3>
                         <div class="tags-list">
@@ -102,6 +109,7 @@
                             <span class="expertise-tag">Qualitative Analysis</span>
                         </div>
                     </div>
+                    -->
                     <div class="about-cta">
                         <a href="javascript:void(0);" class="btn btn-primary" onclick="openPDFViewer('./CV_Warda_Usman.pdf', 'Resume - Warda Usman');">View Resume 📄</a>
                         <div class="social-links-group">
@@ -121,209 +129,6 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="portfolio" class="portfolio-section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Featured Projects</h2>
-                <p class="section-subtitle">Exploring how research insights drive meaningful design decisions</p>
-            </div>
-
-            <div class="portfolio-filters">
-                <button class="filter-btn active" data-filter="all">All Projects</button>
-                <button class="filter-btn" data-filter="enterprise">Enterprise UX</button>
-                <button class="filter-btn" data-filter="security">Security</button>
-                <button class="filter-btn" data-filter="ai">AI & Trust</button>
-            </div>
-
-            <div class="portfolio-grid">
-                <!-- Project 1 -->
-                <article class="project-card" data-category="enterprise">
-                    <div class="project-image">
-                        <img src="./images/01.svg" alt="Enterprise Dashboard Redesign">
-                        <div class="project-overlay">
-                            <button class="btn-view" onclick="openProjectModal('project1')">View Case Study</button>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-tags">
-                            <span class="tag">Enterprise UX</span>
-                            <span class="tag">Interviews</span>
-                        </div>
-                        <h3 class="project-title">Persuasiveness of Conversational AI Agents</h3>
-                        <p class="project-excerpt">Improved task completion rate by 45% through comprehensive user research and iterative testing with 50+ enterprise users.</p>
-                        <div class="project-meta">
-                            <span class="meta-item">🎯 Methods: Interviews, Usability Testing</span>
-                            <span class="meta-item">📈 Impact: +45% Task Completion</span>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Project 2 -->
-                <article class="project-card" data-category="security">
-                    <div class="project-image">
-                        <img src="./images/02.svg" alt="Security Authentication Flow">
-                        <div class="project-overlay">
-                            <button class="btn-view" onclick="openProjectModal('project2')">View Case Study</button>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-tags">
-                            <span class="tag">Security</span>
-                            <span class="tag">Surveys</span>
-                        </div>
-                        <h3 class="project-title">Secure Email Adoption</h3>
-                        <p class="project-excerpt">Reduced authentication friction while maintaining security standards through behavioral analysis and A/B testing.</p>
-                        <div class="project-meta">
-                            <span class="meta-item">🎯 Methods: Surveys, A/B Testing</span>
-                            <span class="meta-item">📈 Impact: -30% Drop-off Rate</span>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Project 3 -->
-                <article class="project-card" data-category="ai">
-                    <div class="project-image">
-                        <img src="./images/03.svg" alt="AI Trust & Transparency">
-                        <div class="project-overlay">
-                            <button class="btn-view" onclick="openProjectModal('project3')">View Case Study</button>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-tags">
-                            <span class="tag">AI & Trust</span>
-                            <span class="tag">Mixed Methods</span>
-                        </div>
-                        <h3 class="project-title">B2B</h3>
-                        <p class="project-excerpt">Established design principles for AI transparency that increased user trust scores by 60% in enterprise applications.</p>
-                        <div class="project-meta">
-                            <span class="meta-item">🎯 Methods: Diary Study, Analytics</span>
-                            <span class="meta-item">📈 Impact: +60% Trust Score</span>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Project 4 -->
-                <article class="project-card" data-category="enterprise">
-                    <div class="project-image">
-                        <img src="./images/04.svg" alt="Cross-Platform Experience">
-                        <div class="project-overlay">
-                            <button class="btn-view" onclick="openProjectModal('project4')">View Case Study</button>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-tags">
-                            <span class="tag">Enterprise UX</span>
-                            <span class="tag">Field Study</span>
-                        </div>
-                        <h3 class="project-title">Cyberbullying Advice and Education on TikTok</h3>
-                        <p class="project-excerpt">Unified user experience across mobile, desktop, and tablet platforms based on contextual inquiry and usage patterns.</p>
-                        <div class="project-meta">
-                            <span class="meta-item">🎯 Methods: Contextual Inquiry</span>
-                            <span class="meta-item">📈 Impact: +35% User Satisfaction</span>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Project 5 -->
-                <article class="project-card" data-category="security">
-                    <div class="project-image">
-                        <img src="./images/05.svg" alt="Privacy Controls UX">
-                        <div class="project-overlay">
-                            <button class="btn-view" onclick="openProjectModal('project5')">View Case Study</button>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-tags">
-                            <span class="tag">Privacy</span>
-                            <span class="tag">Usability Testing</span>
-                        </div>
-                        <h3 class="project-title">Security & Privacy Experiences of Pakistani Immigrants</h3>
-                        <p class="project-excerpt">Simplified privacy settings interface reducing user confusion by 70% while improving control granularity.</p>
-                        <div class="project-meta">
-                            <span class="meta-item">🎯 Methods: Card Sorting, Testing</span>
-                            <span class="meta-item">📈 Impact: -70% User Confusion</span>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Project 6 -->
-                <article class="project-card" data-category="security">
-                    <div class="project-image">
-                        <img src="./images/06.svg" alt="Human-Centered Threat Modeling">
-                        <div class="project-overlay">
-                            <button class="btn-view" onclick="openProjectModal('project6')">View Case Study</button>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-tags">
-                            <span class="tag">Security Research</span>
-                            <span class="tag">Framework Development</span>
-                        </div>
-                        <h3 class="project-title">Human-Centered Threat Modeling Framework</h3>
-                        <p class="project-excerpt">Developed a comprehensive framework for integrating user perspectives into security threat modeling, bridging the gap between technical security and human behavior.</p>
-                        <div class="project-meta">
-                            <span class="meta-item">🎯 Methods: Literature Review, Framework Design</span>
-                            <span class="meta-item">📈 Impact: Published at IEEE S&P 2025</span>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <!-- Research Methods Section -->
-    <section class="methods-section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Research Methods Expertise</h2>
-                <p class="section-subtitle">A comprehensive toolkit for uncovering user insights</p>
-            </div>
-            <div class="methods-grid">
-                <div class="method-card">
-                    <div class="method-icon">🎤</div>
-                    <h3>User Interviews</h3>
-                    <p>Deep-dive conversations to understand user needs, motivations, and pain points</p>
-                </div>
-                <div class="method-card">
-                    <div class="method-icon">📋</div>
-                    <h3>Surveys & Questionnaires</h3>
-                    <p>Quantitative data collection for broad insights and statistical validation</p>
-                </div>
-                <div class="method-card">
-                    <div class="method-icon">👁️</div>
-                    <h3>Usability Testing</h3>
-                    <p>Observational studies to identify friction points and validate design decisions</p>
-                </div>
-                <div class="method-card">
-                    <div class="method-icon">📊</div>
-                    <h3>Analytics & Log Analysis</h3>
-                    <p>Behavioral data analysis to uncover usage patterns and opportunities</p>
-                </div>
-                <div class="method-card">
-                    <div class="method-icon">🎯</div>
-                    <h3>A/B Testing</h3>
-                    <p>Experimental validation of design hypotheses with real user data</p>
-                </div>
-                <div class="method-card">
-                    <div class="method-icon">📝</div>
-                    <h3>Diary Studies</h3>
-                    <p>Longitudinal research to understand experiences in real-world contexts</p>
-                </div>
-                <div class="method-card">
-                    <div class="method-icon">🗂️</div>
-                    <h3>Card Sorting</h3>
-                    <p>Information architecture research for intuitive navigation structures</p>
-                </div>
-                <div class="method-card">
-                    <div class="method-icon">🚶</div>
-                    <h3>Contextual Inquiry</h3>
-                    <p>Field studies to observe users in their natural environment</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
  
 
     <!-- Publications Section -->
@@ -336,22 +141,16 @@
             <div class="publications-grid">
                 <div class="publication-card">
                     <div class="publication-icon">📄</div>
-                    <h3>Distrust of big tech and a desire for privacy: Understanding the motivations of people who have voluntarily adopted secure email</h3>
-                    <p class="publication-meta">SOUPS 2023</p>
-                    <p class="publication-excerpt">Warda Usman, Jackie Hu, McKynlee Wilson, and Daniel Zappala</p>
+                    <h3>Human-Centered Threat Modeling in Practice: Lessons, Challenges, and Paths Forward</h3>
+                    <p class="publication-meta"></p>
+                    <p class="publication-excerpt">Warda Usman, Yixin Zou, Daniel Zappala</p>
                     <div class="publication-links">
-                        <a href="javascript:void(0);" class="pub-link" onclick="openPDFViewer('./publications/soups2023-usman.pdf', 'Distrust of big tech and a desire for privacy');">Read Paper</a>
-                        <a href="./slides/soups2023_slides-usman.pdf" download class="pub-link">Download Slides</a>
+                        <button class="pub-link abs-toggle" onclick="toggleAbstract(this)">Abstract</button>
+                        <a href="javascript:void(0);" class="pub-link" onclick="openPDFViewer('./publications/HCTM.pdf', 'Human-Centered Threat Modeling in Practice');">Read Paper</a>
+                        <a href="https://arxiv.org/abs/2511.13781" target="_blank" class="pub-link">arXiv</a>
                     </div>
-                </div>
-                <div class="publication-card">
-                    <div class="publication-icon">📄</div>
-                    <h3>Understanding the Security and Privacy Experiences of First- and Second-Generation Pakistani Immigrants to the US</h3>
-                    <p class="publication-meta">IEEE S&P 2025</p>
-                    <p class="publication-excerpt">Warda Usman, John Sadik, Ran Elgedawy, Scott Ruoti, Daniel Zappala</p>
-                    <div class="publication-links">
-                        <a href="javascript:void(0);" class="pub-link" onclick="openPDFViewer('./publications/SP25a.pdf', 'Security & Privacy Research Study A');">Read Paper</a>
-                        <a href="./slides/SP-A.pptx" download class="pub-link">Download Slides</a>
+                    <div class="publication-abstract">
+                        <p>Human-centered threat modeling (HCTM) is an emerging area within security and privacy research that focuses on how people define and navigate threats in various social, cultural, and technological contexts. While researchers increasingly approach threat modeling from a human-centered perspective, little is known about how they prepare for and engage with HCTM in practice. In this work, we conduct 23 semi-structured interviews with researchers to examine the state of HCTM, including how researchers design studies, elicit threats, and navigate values, constraints, and long-term goals. We find that HCTM is not a prescriptive process but a set of evolving practices shaped by relationships with participants, disciplinary backgrounds, and institutional structures. Researchers approach threat modeling through sustained groundwork and participant-centered inquiry, guided by values such as care, justice, and autonomy. They also face challenges including emotional strain, ethical dilemmas, and structural barriers that complicate efforts to translate findings into real-world impact. We conclude by identifying opportunities to advance HCTM through shared infrastructure, broader recognition of diverse contributions, and stronger mechanisms for translating findings into policy, design, and societal change.</p>
                     </div>
                 </div>
                 <div class="publication-card">
@@ -360,13 +159,46 @@
                     <p class="publication-meta">IEEE S&P 2025</p>
                     <p class="publication-excerpt">Warda Usman, Daniel Zappala </p>
                     <div class="publication-links">
+                        <button class="pub-link abs-toggle" onclick="toggleAbstract(this)">Abstract</button>
                         <a href="javascript:void(0);" class="pub-link" onclick="openPDFViewer('./publications/SP25b.pdf', 'Security & Privacy Research Study B');">Read Paper</a>
+                        <a href="https://ieeexplore.ieee.org/abstract/document/11023352" target="_blank" class="pub-link">DOI</a>
                         <a href="./slides/SP-B.pptx" download class="pub-link">Download Slides</a>
+                    </div>
+                    <div class="publication-abstract">
+                        <p>Human-centered threat modeling is a practice that researchers use to identify security and privacy threats to people, as well as ways to mitigate those threats. Often this may be the first step toward understanding the security and privacy needs, perspectives, experiences, and practices of a group or community, so that researchers can learn how to better improve their overall safety. However, research in this area is relatively ad hoc as compared to the more well-developed field of threat modeling for systems, leading to a fragmented and incomplete understanding of how researchers should engage in this endeavor. The goal of this work is to systematize the practice of human-centered threat modeling, identifying the core components of a human-centered threat modeling exercise by studying the practices of researchers in the area. We gathered a corpus of 78 papers in this area, using qualitative analysis to understand the practices used by researchers to elicit a threat model. Our results include a framework for human-centered threat modeling, a guide for using the framework that is grounded in best practices, and a description of how human-centered threat modeling differs from systems threat modeling. Our work can be used to guide new and experienced researchers in the field as they work to center human safety in their practices.</p>
+                    </div>
+                </div>
+                <div class="publication-card">
+                    <div class="publication-icon">📄</div>
+                    <h3>Understanding the Security and Privacy Experiences of First- and Second-Generation Pakistani Immigrants to the US</h3>
+                    <p class="publication-meta">IEEE S&P 2025</p>
+                    <p class="publication-excerpt">Warda Usman, John Sadik, Taha, Ran Elgedawy, Scott Ruoti, Daniel Zappala</p>
+                    <div class="publication-links">
+                        <button class="pub-link abs-toggle" onclick="toggleAbstract(this)">Abstract</button>
+                        <a href="javascript:void(0);" class="pub-link" onclick="openPDFViewer('./publications/SP25a.pdf', 'Security & Privacy Research Study A');">Read Paper</a>
+                        <a href="https://ieeexplore.ieee.org/abstract/document/11023485" target="_blank" class="pub-link">DOI</a>
+                        <a href="./slides/SP-A.pptx" download class="pub-link">Download Slides</a>
+                    </div>
+                    <div class="publication-abstract">
+                        <p>This work explores the security and privacy perceptions, practices, and challenges Pakistani immigrants face in the US. We also explore how parent-child dynamics affect immigrants' learning about and adaptation to security and privacy practices in the US. Through 25 semi-structured interviews with Pakistani immigrants, we find that first-generation immigrants perceive heightened risks of discrimination, surveillance, and isolation due to their status as Muslim immigrants. They also report tensions regarding self-expression and self-censorship in online settings. In contrast, second-generation immigrants quickly adapt to life in the US and do not perceive most of these challenges. We find that first- and second-generation immigrants mutually support each other in learning to use technology and reacting to perceived threats. Our findings underscore an urgent need for tailored digital safety initiatives and designs that consider the unique needs of at-risk populations to ensure their security and privacy. Recognizing and addressing these challenges can foster more inclusive digital landscapes, empowering immigrant populations with resilience and agency.</p>
+                    </div>
+                </div>
+                <div class="publication-card">
+                    <div class="publication-icon">📄</div>
+                    <h3>Distrust of big tech and a desire for privacy: Understanding the motivations of people who have voluntarily adopted secure email</h3>
+                    <p class="publication-meta">SOUPS 2023</p>
+                    <p class="publication-excerpt">Warda Usman, Jackie Hu, McKynlee Wilson, and Daniel Zappala</p>
+                    <div class="publication-links">
+                        <button class="pub-link abs-toggle" onclick="toggleAbstract(this)">Abstract</button>
+                        <a href="javascript:void(0);" class="pub-link" onclick="openPDFViewer('./publications/soups2023-usman.pdf', 'Distrust of big tech and a desire for privacy');">Read Paper</a>
+                    </div>
+                    <div class="publication-abstract">
+                        <p>Secure email systems that use end-to-end encryption are the best method we have for ensuring user privacy and security in email communication. However, the adoption of secure email remains low, with previous studies suggesting mainly that secure email is too complex or inconvenient to use. However, the perspectives of those who have, in fact, chosen to use an encrypted email system are largely overlooked. To understand these perspectives, we conducted a semi-structured interview study that aims to provide a comprehensive understanding of the mindsets underlying adoption and use of secure email services. Our participants come from a variety of countries and vary in the amount of time they have been using secure email, how often they use it, and whether they use it as their primary account. Our results uncover that a defining reason for adopting a secure email system is to avoid surveillance from big tech companies. However, regardless of the complexity and accuracy of a person's mental model, our participants rarely send and receive encrypted emails, thus not making full use of the privacy they could obtain. These findings indicate that secure email systems could potentially find greater adoption by appealing to their privacy advantages, but privacy gains will be limited until a critical mass are able to join these systems and easily send encrypted emails to each other.</p>
                     </div>
                 </div>
             </div>
             <div class="scholar-link">
-                <a href="https://scholar.google.com/citations?user=m7AQs5sAAAAJ&hl=en&oi=ao" target="_blank" class="btn btn-secondary">View All Publications on Google Scholar 🎓</a>
+                <a href="https://scholar.google.com/citations?user=m7AQs5sAAAAJ&hl=en&oi=ao" target="_blank" class="btn btn-secondary">View All Publications on Google Scholar</a>
             </div>
         </div>
     </section>

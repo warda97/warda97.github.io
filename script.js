@@ -169,38 +169,41 @@ const modalBody = document.getElementById('modalBody');
 // Mock project data - in production, this would come from a backend
 const projectData = {
     project1: {
-        title: 'Persuasiveness of Conversational AI Agents',
-        image: './images/01.svg',
-        context: 'A Fortune 500 company needed to modernize their legacy enterprise dashboard that was causing frustration and inefficiency among 5,000+ users.',
-        role: 'Lead UX Researcher',
-        duration: '4 months',
-        team: 'UX Researcher, 2 Designers, 3 Developers',
+        title: 'Human-Centered Threat Modeling Framework',
+        image: './images/06.svg',
+        context: 'Traditional threat modeling in security research focuses on technical vulnerabilities while often overlooking the human element. This systematization of knowledge (SoK) paper developed a comprehensive framework for integrating user perspectives, behaviors, and contexts into security threat modeling processes.',
+        role: 'Lead Researcher & Framework Developer',
+        duration: '18 months',
+        team: 'Security Researchers, UX Researchers, Academic Advisors',
         methods: [
-            'User Interviews (30 participants)',
-            'Contextual Inquiry in office settings',
-            'Usability Testing (5 rounds)',
-            'Survey with 200+ responses',
-            'Analytics Analysis'
+            'Systematic literature review of 200+ security papers',
+            'Comparative analysis of threat modeling approaches',
+            'Framework design and validation',
+            'Case study applications across different domains',
+            'Expert consultation and refinement'
         ],
         findings: [
-            'Users spent 40% of time searching for features buried in menus',
-            'Critical information was often overlooked due to poor visual hierarchy',
-            'Frequent context-switching caused cognitive overload',
-            'Mobile users (25% of traffic) had severe usability issues'
+            'Existing threat modeling frameworks rarely consider user mental models and behaviors',
+            'Security researchers lack structured guidance for incorporating human factors',
+            'User-centered security research often misses systematic threat analysis',
+            'Gap between traditional technical threat modeling and human-computer interaction research',
+            'Need for interdisciplinary approach bridging security and HCI communities'
         ],
         insights: [
-            'Implement a search-first interface design',
-            'Create customizable widget-based dashboard',
-            'Introduce progressive disclosure for advanced features',
-            'Optimize for mobile-first responsive design'
+            'Integrate user research methods into early-stage threat identification',
+            'Consider diverse user populations and their unique threat landscapes',
+            'Balance technical security requirements with user capabilities and constraints',
+            'Document human-centered threat considerations throughout the research process',
+            'Use framework to identify gaps in existing security solutions'
         ],
         impact: [
-            '45% increase in task completion rate',
-            '60% reduction in time-to-complete common tasks',
-            '35% decrease in support tickets',
-            '4.2/5 user satisfaction score (up from 2.8)'
+            'Published at IEEE S&P 2025 (top-tier security conference)',
+            'First comprehensive framework for human-centered threat modeling',
+            'Adopted by researchers for designing security studies',
+            'Bridge between security and HCI research communities',
+            'Methodology guide for future security research'
         ],
-        visuals: ['Wireframes', 'User Journey Maps', 'Before/After Comparisons', 'Heatmaps']
+        visuals: ['Framework Diagram', 'Process Flow', 'Case Study Examples', 'Threat Model Templates']
     },
     project2: {
         title: 'Secure Email Adoption',
@@ -349,41 +352,38 @@ const projectData = {
         visuals: ['Threat Model Framework', 'Cross-Generational Analysis', 'Cultural Context Mapping', 'Interview Themes']
     },
     project6: {
-        title: 'Human-Centered Threat Modeling Framework',
-        image: './images/06.svg',
-        context: 'Traditional threat modeling in security research focuses on technical vulnerabilities while often overlooking the human element. This systematization of knowledge (SoK) paper developed a comprehensive framework for integrating user perspectives, behaviors, and contexts into security threat modeling processes.',
-        role: 'Lead Researcher & Framework Developer',
-        duration: '18 months',
-        team: 'Security Researchers, UX Researchers, Academic Advisors',
+        title: 'Persuasiveness of Conversational AI Agents',
+        image: './images/01.svg',
+        context: 'A Fortune 500 company needed to modernize their legacy enterprise dashboard that was causing frustration and inefficiency among 5,000+ users.',
+        role: 'Lead UX Researcher',
+        duration: '4 months',
+        team: 'UX Researcher, 2 Designers, 3 Developers',
         methods: [
-            'Systematic literature review of 200+ security papers',
-            'Comparative analysis of threat modeling approaches',
-            'Framework design and validation',
-            'Case study applications across different domains',
-            'Expert consultation and refinement'
+            'User Interviews (30 participants)',
+            'Contextual Inquiry in office settings',
+            'Usability Testing (5 rounds)',
+            'Survey with 200+ responses',
+            'Analytics Analysis'
         ],
         findings: [
-            'Existing threat modeling frameworks rarely consider user mental models and behaviors',
-            'Security researchers lack structured guidance for incorporating human factors',
-            'User-centered security research often misses systematic threat analysis',
-            'Gap between traditional technical threat modeling and human-computer interaction research',
-            'Need for interdisciplinary approach bridging security and HCI communities'
+            'Users spent 40% of time searching for features buried in menus',
+            'Critical information was often overlooked due to poor visual hierarchy',
+            'Frequent context-switching caused cognitive overload',
+            'Mobile users (25% of traffic) had severe usability issues'
         ],
         insights: [
-            'Integrate user research methods into early-stage threat identification',
-            'Consider diverse user populations and their unique threat landscapes',
-            'Balance technical security requirements with user capabilities and constraints',
-            'Document human-centered threat considerations throughout the research process',
-            'Use framework to identify gaps in existing security solutions'
+            'Implement a search-first interface design',
+            'Create customizable widget-based dashboard',
+            'Introduce progressive disclosure for advanced features',
+            'Optimize for mobile-first responsive design'
         ],
         impact: [
-            'Published at IEEE S&P 2025 (top-tier security conference)',
-            'First comprehensive framework for human-centered threat modeling',
-            'Adopted by researchers for designing security studies',
-            'Bridge between security and HCI research communities',
-            'Methodology guide for future security research'
+            '45% increase in task completion rate',
+            '60% reduction in time-to-complete common tasks',
+            '35% decrease in support tickets',
+            '4.2/5 user satisfaction score (up from 2.8)'
         ],
-        visuals: ['Framework Diagram', 'Process Flow', 'Case Study Examples', 'Threat Model Templates']
+        visuals: ['Wireframes', 'User Journey Maps', 'Before/After Comparisons', 'Heatmaps']
     }
 };
 
@@ -467,9 +467,6 @@ function openProjectModal(projectId) {
                         </span>
                     `).join('')}
                 </div>
-                <p style="margin-top: 1rem; color: var(--color-text-tertiary); font-size: 0.875rem; font-style: italic;">
-                    * Detailed artifacts available under NDA
-                </p>
             </div>
         </div>
     `;
@@ -512,6 +509,14 @@ const pdfModal = document.getElementById('pdfModal');
 const pdfViewer = document.getElementById('pdfViewer');
 const pdfTitle = document.getElementById('pdfTitle');
 const pdfDownloadBtn = document.getElementById('pdfDownloadBtn');
+
+// Toggle abstract visibility
+function toggleAbstract(button) {
+    const card = button.closest('.publication-card');
+    const abstract = card.querySelector('.publication-abstract');
+    abstract.classList.toggle('show');
+    button.classList.toggle('active');
+}
 
 function openPDFViewer(pdfPath, title) {
     // Validate PDF path exists
@@ -573,55 +578,56 @@ const storyModalBody = document.getElementById('storyModalBody');
 const storyData = {
     'phd-journey': {
         image: './images/soonvalley.jpg',
-        title: '🌄 My Journey from Pakistan',
+        title: 'Read about my journey to a PhD in Computer Science',
         content: [
             'I come from a very humble background, and belong from a small, beautiful village located in Soon Valley, Pakistan. Growing up in this serene valley, surrounded by natural beauty and a close-knit community, instilled in me values of perseverance, gratitude, and the importance of education.',
             'In 2019, I got my undergraduate degree in Computer and Information Sciences from Pakistan Institute of Engineering and Applied Sciences (PIEAS). This achievement was a culmination of years of dedication and support from my family and community, who believed in the power of education to transform lives.',
             'In 2020, I started my PhD in Computer Science at Brigham Young University. This transition from a small village in Pakistan to a research institution in the United States was both exhilarating and challenging. The cultural adjustment, academic rigor, and being far from home tested my resilience in ways I never imagined.',
             'Being in Pakistan while applying to grad schools in the United States, I struggled with finding advice on how to go about the application process. The lack of mentorship, limited resources, and unfamiliarity with the system made the journey incredibly daunting. I spent countless hours researching, reaching out to professors, and preparing applications with minimal guidance.',
-            'If you are considering applying for CS grad schools in the United States, you are welcome to glance through my PhD Application Guide. I created this resource to help others who might be in similar situations—to provide the guidance I wished I had during my application journey. I hope it makes your path a little smoother.'
+            'If you are considering applying for CS grad schools in the United States, you are welcome to glance through my PhD Application Guide. I created this resource to help others who might be in similar situations, since I got a lot of questions about it. I hope it makes your path a little smoother.'
         ],
         cta: {
-            title: '📚 Ready to Start Your Journey?',
-            button: 'Read PhD Application Guide',
-            link: 'phd-advice'
+            title: 'Want to learn more?',
+            buttons: [
+                { text: 'Read PhD Application Guide', link: 'phd-advice', internal: true },
+                { text: 'Schedule a Meeting', link: 'https://calendar.app.google/eVZNKpZgfH8sMmrD7', internal: false }
+            ]
         }
     },
     'phd-advice': {
         image: './images/soonvalley.jpg',
-        title: '📚 PhD Application Advice',
+        title: 'PhD Application Advice',
         content: [
-            'A lot of my juniors have asked me for advice on how to apply for graduate school in the United States so I decided to put all of the information I give them publicly available here. All of this advice is from my personal experience and describes what the process looked like for me. This is not the only way you can get admission into a grad school. If you have specific questions that I do not address here, please reach out and I\'ll do my best to answer your questions! 😊',
-            '<strong>Thinking It Through!</strong><br>My first advice to any student planning to apply for a PhD would be to think it through and explore what it really entails. Getting a PhD is a huge commitment, and before you dive in head-first, it\'s a good idea to test the waters. While the idea of grad school might sound all fun and rewarding, we should know that it requires some serious work, and research can be sometimes a bit dull -- reading tens if not hundreds of papers is not something that everyone enjoys. Read a few papers, try to understand them, see if you enjoy doing that, and then proceed.',
-            'If you made it through the first paragraph, still wanting to go for a PhD, you have passed the first barrier! 🎉 Another thing to be really sure of is to know what area interests you the most. Computer Science is so vast and offers so much variety in the areas you can have your research in. Make sure to be at least familiar with most, if not all, the areas that could be of your interest and make a list. Go through the list once or twice, revise, and narrow it down to two or three areas for you.',
+            'A lot of my juniors have asked me for advice on how to apply for graduate school in the United States so I decided to put all of the information I give them publicly available here. All of this advice is from my personal experience and describes what the process looked like for me. This is not the only way you can get admission into a grad school. If you have specific questions that I do not address here, please reach out and I\'ll do my best to answer your questions.',
+            '<strong>Thinking It Through</strong><br>My first advice to any student planning to apply for a PhD would be to think it through and explore what it really entails. Getting a PhD is a huge commitment, and before you dive in head-first, it\'s a good idea to test the waters. While the idea of grad school might sound all fun and rewarding, we should know that it requires some serious work, and research can be sometimes a bit dull -- reading tens if not hundreds of papers is not something that everyone enjoys. Read a few papers, try to understand them, see if you enjoy doing that, and then proceed.',
+            'If you made it through the first paragraph, still wanting to go for a PhD, you have passed the first barrier. Another thing to be really sure of is to know what area interests you the most. Computer Science is so vast and offers so much variety in the areas you can have your research in. Make sure to be at least familiar with most, if not all, the areas that could be of your interest and make a list. Go through the list once or twice, revise, and narrow it down to two or three areas for you.',
             '<strong>Getting Your Documents Together</strong><br>Before you apply for a Ph.D. program, make sure that you are aware of the requirements that have been set by the university you are applying to. Be aware that most universities in the states have two different types of requirements: university level and department level. It is important that you browse some universities you plan to apply and see what departmental requirements have been set. Once you have checked the requirements make sure you are eligible to apply to that department or program by viewing their eligibility requirements.',
             '<strong>Finding a Supervisor</strong><br>You can apply for a PhD without having a supervisor in advance. However, it\'s always a good idea to see what kind of research is happening in the department and whether or not it\'s a good fit for you. Another benefit to having a supervisor in advance is that it majorly increases your chances to get into the program, as there\'s someone available to guide you already.',
             'Browse the department\'s website and find a potential supervisor. This is one of the most challenging parts. The professors are sometimes (read: often) to the maximum capacity and some might only be just hiring one student. Once you find a professor who has common research interests with you, start reading their research, their bio, their past and current projects, and how (and if) it all aligns with your goals. After you have read their research papers, make sure you write down what you have learned because after reading 5-6 papers, you will not remember the bits and pieces.',
-            '<strong>Emailing the Professor</strong><br>Once you have done your homework of reading the profile and papers, constructing an email should be fairly easy. In your email, you should:<br><br>1. Introduce yourself and state the purpose of your email<br>2. Briefly explain your education, interests, and relevant experience<br>3. Address how your goals align with their lab\'s research<br>4. Attach your CV/Resume (and transcript if relevant)<br><br><strong>Avoid these fatal blunders:</strong><br>❌ Having a bizarre/empty subject line<br>❌ Grammatical/spelling errors<br>❌ Misspelling the professor\'s name<br>❌ Spamming with unnecessary attachments',
+            '<strong>Emailing the Professor</strong><br>Once you have done your homework of reading the profile and papers, constructing an email should be fairly easy. In your email, you should:<br><br>1. Introduce yourself and state the purpose of your email<br>2. Briefly explain your education, interests, and relevant experience<br>3. Address how your goals align with their lab\'s research<br>4. Attach your CV/Resume (and transcript if relevant)<br><br><strong>Avoid these common mistakes:</strong><br>• Having a vague or empty subject line<br>• Grammatical or spelling errors<br>• Misspelling the professor\'s name<br>• Including unnecessary attachments',
             '<strong>Constructing a CV/Resume</strong><br>If you intend to apply for grad school and are still in your undergrad, ensure you start accumulating experience very early on. The more the experience, the better the CV. However, even if you don\'t have much relevant experience, make sure your CV accurately defines you and highlights your potential, capabilities, and achievements. You must have done something to be introduced to the field—mention those things on your resume.',
-            'Once you have sent an email, wait for about a week to receive a response. If you don\'t hear back, send a follow-up email. If they refuse or still do not respond, do not be disheartened and continue the process again. Remember, the journey to a PhD is one of persistence and resilience. Good luck! 🚀'
+            'Once you have sent an email, wait for about a week to receive a response. If you don\'t hear back, send a follow-up email. If they refuse or still do not respond, do not be disheartened and continue the process again. Remember, the journey to a PhD is one of persistence and resilience. Good luck.'
         ],
         cta: {
-            title: '🌄 Background Story',
-            button: 'Read My Journey from Pakistan',
-            link: 'phd-journey'
+            title: 'Background Story',
+            buttons: [
+                { text: 'Read My Journey from Pakistan', link: 'phd-journey', internal: true },
+                { text: 'Schedule a Meeting', link: 'https://calendar.app.google/eVZNKpZgfH8sMmrD7', internal: false }
+            ]
         }
     },
     'dei-work': {
         image: './images/csideteam.jpg',
-        title: '🤝 Building Inclusive Communities',
+        imageCaption: 'With the CS DEI Office women\'s team and Director',
+        title: 'Building Inclusive Communities',
         content: [
-            'I feel very passionately about our goal to build a Zion community grounded in unity, mutual respect, and charity toward all. This vision extends beyond mere words—it\'s about creating tangible change in how we support and uplift one another in our academic and professional journeys.',
-            'We commit to nurturing an environment where the full realization of human potential can be pursued as we strive to bless and assist individuals in their quest for perfection and eternal life. This commitment means actively working to remove barriers, challenge biases, and create spaces where everyone feels valued and heard.',
-            'My role is to guide and train other mentors about how to better help our fellow friends in the computer science department. Through structured training programs, I work with peer mentors to develop skills in active listening, cultural sensitivity, and inclusive communication. We focus on understanding the diverse challenges students face—whether they\'re international students, first-generation college students, or from underrepresented groups.',
-            'Through active listening, empathy, and creating inclusive spaces, I work to ensure every voice is heard and valued. This involves organizing regular check-ins, creating safe spaces for difficult conversations, and implementing feedback mechanisms that allow everyone to contribute to our community\'s growth.',
-            'Our DEI initiatives include mentorship programs, cultural awareness workshops, and community-building events that celebrate diversity. By fostering genuine connections and understanding, we\'re building not just a department, but a family that supports each member\'s success and well-being.'
-        ],
-        cta: {
-            title: '💙 Want to Get Involved?',
-            button: 'Learn About DEI Initiatives',
-            link: '#'
-        }
+            'I care a lot about how people experience and navigate digital spaces, and I genuinely enjoy learning how to make those spaces easier to enter and navigate.',
+            'Much of my research involves working with people whose relationships with technology are shaped by migration, gender norms, political conditions, or social risk. I like doing this kind of work because it forces me to slow down, listen carefully, and continually educate myself about contexts I don\'t fully understand. I spend a lot of time reading, asking questions, revising my assumptions, and learning from the people I work with. That process shapes not just my research findings, but how I think about responsibility in technical work more broadly.',
+            'I also enjoy mentoring and teaching, especially with students who are still figuring out where they fit. I came into academia as a first-generation, international student without much familiarity with how things worked, and I remember how disorienting that felt. Because of that, I try to be transparent, approachable, and explicit about expectations, and to make it clear that confusion is normal and asking questions is part of learning.',
+            'During graduate school, I was actively involved in my computer science department beyond research and teaching. I served in student leadership roles, worked on departmental efforts around equity and inclusion, and spent time on practical projects like developing onboarding resources for international students, setting up peer support systems, and advocating for student-parents. I liked doing this behind-the-scenes work because it addressed real, everyday frictions that often go unnoticed but have a big impact on who feels supported and who doesn\'t.',
+            'Outside of research and mentoring, I\'m drawn to the behind-the-scenes work that helps communities function better: onboarding resources, peer support, and small structural changes that make a real difference in people\'s day-to-day experiences.',
+            'I\'m still learning, and I expect that to continue throughout my career. Staying open, reflective, and willing to adjust how I work is important to me, especially in fields that shape people\'s lives in ways that aren\'t always visible.'
+        ]
     }
 };
 
@@ -629,23 +635,38 @@ function openStoryModal(storyId) {
     const story = storyData[storyId];
     
     // Check if the link is an internal story link or external
-    const isInternalLink = storyData[story.cta.link];
-    const linkAttribute = isInternalLink ? 
-        `onclick="openStoryModal('${story.cta.link}'); return false;"` : 
-        `href="${story.cta.link}" target="_blank"`;
+    let ctaHtml = '';
+    if (story.cta) {
+        const buttonsHtml = story.cta.buttons.map(btn => {
+            const isInternalLink = btn.internal !== false && storyData[btn.link];
+            const linkAttribute = isInternalLink ? 
+                `href="javascript:void(0);" onclick="openStoryModal('${btn.link}'); return false;"` : 
+                `href="${btn.link}" target="_blank"`;
+            return `<a ${linkAttribute} class="btn btn-primary" style="margin-right: 0.75rem; margin-bottom: 0.5rem;">${btn.text}</a>`;
+        }).join('');
+        
+        ctaHtml = `
+            <div style="margin-top: 1.5rem;">
+                <p style="font-weight: 600; margin-bottom: 0.75rem; color: var(--color-text-primary);">${story.cta.title}</p>
+                <div style="display: flex; flex-wrap: wrap;">
+                    ${buttonsHtml}
+                </div>
+            </div>
+        `;
+    }
     
     storyModalBody.innerHTML = `
         <div style="padding: 2rem;">
-            <img src="${story.image}" alt="${story.title}" class="story-hero">
+            <figure style="margin: 0 0 1.5rem 0;">
+                <img src="${story.image}" alt="${story.title}" class="story-hero" style="margin-bottom: 0.5rem;">
+                ${story.imageCaption ? `<figcaption style="font-size: 0.85rem; color: var(--color-text-secondary); text-align: center; font-style: italic;">${story.imageCaption}</figcaption>` : ''}
+            </figure>
             <div class="story-content">
                 <h2>${story.title}</h2>
                 ${story.content.map(paragraph => `
                     <p>${paragraph}</p>
                 `).join('')}
-                <div class="story-cta">
-                    <h3>${story.cta.title}</h3>
-                    <a href="javascript:void(0);" ${linkAttribute} class="btn btn-primary">${story.cta.button}</a>
-                </div>
+                ${ctaHtml}
             </div>
         </div>
     `;
